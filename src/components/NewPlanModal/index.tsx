@@ -31,9 +31,9 @@ const NewPlanModal = ()=>{
                         <h2>Criar Novo Plano</h2>
                         <button onClick={()=>setNewPlanModal(false)} className="btn-def">X</button>
                     </header>
-                    <form>
+                    <form onSubmit={setNewPlan}>
                         <input onChange={(e)=> setPlanName(e.target.value)} type="text" placeholder="nome do plano..."/>
-                        <button onClick={setNewPlan} className="submit-def-btn">awhaw</button>
+                        <button className="submit-def-btn">Adicionar plano</button>
                     </form>
                 </div>
             </div>

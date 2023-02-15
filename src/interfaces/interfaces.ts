@@ -6,6 +6,6 @@ export interface iPlan{
 
 export interface iTask{
     name: string;
-    time?: string;
+    date?: string;
     important: boolean;
 }

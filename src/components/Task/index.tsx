@@ -10,11 +10,11 @@ const Task = ({task}: iTaskProps) => {
     return(
         <li>
             <div className={Styled.leftTaskSide}>
-                <input type="checkbox" />
-                <h4>task.name</h4>
+                <input type="checkbox"/>
+                <h4>{task.name}</h4>
             </div>
             <div className={Styled.rightTaskSide}>
-                <span>09:00</span>
+                <span>{task.date}</span>
                 <button className={Styled.deleteTaskBtn}>
                     <img src={binIcon} />
                 </button>
