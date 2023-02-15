@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: var(--color-white);
+}
+
+button{
+    transition: 0.3s ease;
+}
+
+button:hover{
+    filter: brightness(0.9);
+}
+
+button:hover{
+    transform: translateY(2px);
+}
+
+
+:root{
+
+    --color-primary: #1E1E2C;
+    --color-secondary: #2D2D44;
+
+    --color-blue: #33E1ED;
+    --color-white:#FFFFFF;
+
+}
+
+.container{
+    width: 100vw;
+    max-width: 1220px;
+    padding: 20px;
+    margin: 0 auto;
+  }

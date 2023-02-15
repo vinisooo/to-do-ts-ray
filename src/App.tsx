@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import "./GlobalStyles.css"
+import "./styles/modals.css"
+import Header from './components/Header';
+import NewPlanModal from './components/NewPlanModal';
+import "./styles/buttons.css";
+import "animate.css";
+
+import { useContext } from 'react';
+import { TasksContext } from './context/TasksContext';
 
 function App() {
+  const {newPlanModal} = useContext(TasksContext)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <Header></Header>
+      </main>
+      {
+        newPlanModal && <NewPlanModal/>
+      }
     </div>
   );
 }

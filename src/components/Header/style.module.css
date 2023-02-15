@@ -1,0 +1,11 @@
+.taskHeader{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px 20px;
+}
+
+.taskHeader h1{
+    font-size: 20px;
+    color: var(--color-white);
+}
