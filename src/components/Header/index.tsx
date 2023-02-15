@@ -1,4 +1,3 @@
-import { BADHINTS } from "dns";
 import Styled from "./style.module.css";
 
 import { useContext } from "react";

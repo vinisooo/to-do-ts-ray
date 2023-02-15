@@ -1,0 +1,32 @@
+.leftTaskSide {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rightTaskSide {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rightTaskSide span {
+    font-size: 14px;
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+.deleteTaskBtn {
+    border: none;
+    background-color: transparent;
+}
+
+.deleteTaskBtn img {
+    width: 13px;
+    height: 13px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -16,11 +16,8 @@ interface iTasksExports{
 export const TasksContext = createContext({} as iTasksExports);
 
 const TasksProvider = ({children}: iTasksProviderProps)=>{
-
     const [ newPlanModal, setNewPlanModal ] = useState<boolean>(false);
-    const [plans, setPlans] = useState<iPlan[]>([]);
-
-    console.log(newPlanModal)
+    const [ plans, setPlans ] = useState<iPlan[]>([]);
 
     return(
         <TasksContext.Provider value={{setNewPlanModal, newPlanModal, plans , setPlans}}>

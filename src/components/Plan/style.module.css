@@ -1,0 +1,47 @@
+.plan {
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+.plan header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.openPlan {
+    transition: 0.2s ease;
+    border-bottom: 2px solid var(--color-blue) !important;
+}
+
+.displayTasksBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--color-secondary);
+}
+
+.plan header h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.plan header div {
+    display: flex;
+    gap: 20px;
+}
+
+.tasksList {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.tasksList li {
+    display: flex;
+    justify-content: space-between;
+}

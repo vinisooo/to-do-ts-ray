@@ -10,13 +10,10 @@
 
 .modal {
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
     background-color: var(--color-primary);
-
-    padding: 20px;
-
 }
 
 .modal h2 {
